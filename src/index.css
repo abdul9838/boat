@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  --sb-track-color: #232E33;
+  --sb-thumb-color: rgb(142, 124, 124);
+  --sb-size: 10px;
+  scrollbar-color: var(--sb-thumb-color) 
+                   var(--sb-track-color);
+
+  font-family: 'Poppins', sans-serif;
+  background-color: #F4F4F4;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size) 
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+  
+  }
